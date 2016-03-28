@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title><?php echo "Personal Media Library"; ?></title>
+	<title><?php echo $pageTitle; ?></title>
 <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
