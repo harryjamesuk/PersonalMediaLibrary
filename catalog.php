@@ -1,18 +1,23 @@
 <?php
 
 $pageTitle = "Full Catalog";    // Default title.
+$section = null;    // Default section.
+
 if (isset($_GET['cat'])) { // A category has been supplied.
     $cat = $_GET['cat'];    // Get the category.
 
     switch ($cat) { // Switch based on category. Leave default if none of these.
         case "books":
             $pageTitle = "Books";
+            $section = "books";
             break;
         case "movies":
             $pageTitle = "Movies";
+            $section = "movies";
             break;
         case "music":
             $pageTitle = "Music";
+            $section = "music";
             break;
     }
 }
